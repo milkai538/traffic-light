@@ -1,1 +1,48 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "top-header"
+    "light-section";
+  row-gap: 20px;
+  justify-items: center;
+}
 
+header {
+  grid-area: top-header;
+}
+
+section {
+  grid-area: light-section;
+}
+
+.housing {
+  display: grid;
+  grid-template-rows: repeat(3, 80px);
+  row-gap: 15px;
+  background-color:chocolate;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  background-color:chartreuse;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+#red-light.on {
+  background-color: red;
+  box-shadow: 0 0 20px #f00;
+}
+
+#yellow-light.on {
+  background-color: yellow;
+  box-shadow: 0 0 20px #fc0;
+}
+
+#green-light.on {
+  background-color: green;
+  box-shadow: 0 0 20px #0f0;
+}
